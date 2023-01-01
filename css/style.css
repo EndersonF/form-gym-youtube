@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.detalhe {
+  color: #fb1;
+  font-size: 2.6rem;
+}
+
+.img-animation {
+  width: 70%;
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.left-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  flex-direction: column;
+}
+
+.left-login > h1 {
+  color: #f0f8ff;
+  font-size: 2.6rem;
+}
+
+.card-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 25px 35px;
+  background: #434343;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-login > h1 {
+  color: #f0f8ff;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.textfield {
+  position: relative;
+  width: 100%;
+}
+
+.textfield > input {
+  width: 100%;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  background: #696868;
+  color: #f0f8ff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.textfield > label {
+  color: #f0f8ff;
+  font-size: 1rem;
+  margin: 12px 0;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.login__eye {
+  position: absolute;
+  top: 4rem;
+  right: 1rem;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  color: #f0f8ff;
+  outline: none;
+  cursor: pointer;
+}
+
+.placeholder-text::placeholder {
+  font-size: 14px;
+  color: #f0f8ff;
+}
+
+.btn-cadastro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  margin: 20px 0;
+  border-radius: 8px;
+  background: #f0f8ff;
+  color: #434343;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.btn-cadastro:hover,
+.btn-cadastro:focus {
+  box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;
+  outline: none;
+}
+
+.textfield > input:hover {
+  border-color: #fb1;
+  box-shadow: 0 0 0 3px #fea;
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  .card-login {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+  .left-login > h1 {
+    font-size: 1.9rem;
+    flex-wrap: wrap;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .detalhe {
+    font-size: 1.9rem;
+  }
+  .left-login {
+    width: 100%;
+    height: auto;
+  }
+  .card-login {
+    width: 90%;
+    padding: 20px 30px;
+    border-radius: 1rem;
+  }
+  .textfield > input {
+    padding: 0.75rem;
+  }
+  .textfield > label {
+    font-size: 0.875rem;
+  }
+}

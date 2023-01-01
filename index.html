@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/icons8-haltere-64.png"
+      type="image/svg+xml"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>GYM</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>
+          Cadastra-se e <br />comece a treinar hoje mesmo<span class="detalhe"
+            >.</span
+          >
+        </h1>
+        <img
+          src="img/healthy-habit-animate.svg"
+          alt="Mulher treinando"
+          class="img-animation"
+        />
+      </div>
+      <form action="">
+        <div class="card-login">
+          <h1>Cadastro</h1>
+          <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input
+              id="usuario"
+              type="text"
+              class="placeholder-text"
+              name="usuario"
+              placeholder="Digite seu usuário"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              class="placeholder-text"
+              placeholder="Digite seu email"
+              required
+            />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input
+              id="inputPasswordId"
+              type="password"
+              class="placeholder-text"
+              placeholder="Digite sua senha"
+              required
+            />
+            <i
+              class="ri-eye-line ri-eye-off-line login__eye"
+              id="eyeIconId"
+            ></i>
+            <button class="btn-cadastro">Cadastrar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
